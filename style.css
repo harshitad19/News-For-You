@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1380px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    /* background-color: #f3faff; */
+    background: linear-gradient(to bottom, #b6cfe6, white);
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+    /* padding-block refers to the padding given to up and down of the element */
+    /* similarly padding-inline refers to the padding given to left and right of the element */
+}
+
+.nav-links ul{
+    gap: 16px;
+}
+
+.hover-link{
+    cursor: pointer;
+}
+
+.hover-link:hover{
+    color: #060708;
+}
+
+.hover-link:active{
+    color: red;
+}
+
+.nav-item.active{
+    color: var(--accent-color);
+}
+
+.search-bar{
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input{
+    font-family: "Roboto", sans-serif;
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+
+.search-button{
+    background-color: var(--accent-color);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 8px 24px 8px 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+    padding: 7px;
+}
+
+.card{
+    width: 400px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    /* overflow isly lagaya hi ki humara image jo hai wo follow kre border radius ko */
+    transition: all 0.3s ease-in;
+}
+
+.card:hover{
+    background-color: #f4f7f9;
+    box-shadow: 1px 1px 3px;
+    transform: translateY(-2px);
+}
+
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 12px;
+} 
+
+footer{
+    justify-content: space-around;
+    padding-block: 8px;
+    background: linear-gradient(to top, #b6cfe6, white);
+    height: 70px;
+}
+
+
+.left-footer a{
+    margin-inline: 20px;
+}
+
+.right-footer a{
+    margin-inline: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* darkmode */
+
+/* body.dark-light-mode{
+    background-color: #171616;
+}
+
+nav.dark-light-mode{
+    background: linear-gradient(to bottom, #171616, #171515);
+}
+
+.nav-item.dark-light-mode{
+    color: #d2cece;
+}
+
+.nav-item.dark-light-mode:hover{
+    color: white;
+}
+
+footer.dark-light-mode{
+    background: linear-gradient(to bottom, #171616, #171515);
+    border-top: 2px solid #a4b3c1;
+}
+
+.card.dark-light-mode{    
+    background-color: #171616;
+    color: white;
+    border: 0.2px solid #6c6c6c;
+    box-shadow: 0 0 0 0;
+}
+
+.card.dark-light-mode:hover{
+    background-color: #1c1c1c;
+}
+
+.news-desc.dark-light-mode{
+    color: white;
+}
+
+.news-input.dark-light-mode{
+    background-color: #171616;
+}
+
+::placeholder.dark-light-mode{
+    color: white;
+} */
+
+
+/* nav.dark-light-mode{
+    background-color: red;
+} */
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./nfy.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>News-For-you</title>
+</head>
+<body class="">
+    <nav >
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo" id="company-logo">
+                <img src="./NFY.png" alt="company-logo" height="50px">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                <li class="hover-link nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+            </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" placeholder="e.g. Science " id="search-text">
+                <button class="search-button" id="search-button">🔍 Search</button>
+
+                <!-- <div class="mode">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="mode"></label>
+                </div> -->
+            </div>         
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>    
+    </main>
+
+    <template id="template-news-card"> 
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is title</h3>
+                <h6 class="news-source" id="news-source">playboy magazine 12/12/1929</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora voluptate corporis minus blanditiis, consequatur labore fugiat! Facilis deleniti asperiores accusantium!</p>
+            </div>
+        </div>
+    </template>
+
+    <footer class="footer flex">
+        <div class="left-footer ">
+            <a href="" class="hover-link nav-item">Privacy Policy</a>
+            <a href="" class="hover-link nav-item">Terms & Conditions</a>
+            <a href="" class="hover-link nav-item">Contact Us</a>
+        </div>
+        <div class="right-footer">
+            <a href="https://www.linkedin.com/in/au7-anmol-upadhyay"><i class="fa-brands fa-linkedin hover-link nav-item"></i></a>
+            <a href="https://www.instagram.com/au7_anmol_upadhyay/"><i class="fa-brands fa-instagram hover-link nav-item"></i></a>
+            <a href="https://github.com/au7anmolupadhyay"><i class="fa-brands fa-github hover-link nav-item"></i></a>
+            <a href="https://www.twitter.com/au7anmol"><i class="fa-brands fa-twitter hover-link nav-item"></i></a>
+        </div>
+    </footer>
+</body>
+
+
+<script src="https://kit.fontawesome.com/37d08086b6.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</html>
